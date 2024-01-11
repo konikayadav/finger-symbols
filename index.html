@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Emotion To Emoji</title>
+  <title>Finger Signal To Emoji</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
   <div class="container">
 
     <center>
-      <h1 class="btn btn-primary heading">EMOTION TO EMOJI!!!
+      <h1 class="btn btn-primary heading">FINGER SIGNALS!!!
         <br>
         <span>&#128077;</span>
         <span>&#129304;</span>
@@ -29,13 +29,7 @@
       </h1>
       <br><br>
 
-      <p style="font-size: 22px;">Take your selfie to generate emoji
-        <br>
-        <b style="color: rgb(17, 0, 255)">Are you Happy?</b>
-        <br>
-        <b style="color: black">Are you Sad?</b>
-        <br>
-        <b style="color: red">Are you Angry?</b>
+      <p style="font-size: 22px;">Take your hand selfie to generate emoji
         <br>
       </p>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadowed">
@@ -47,19 +41,19 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <label>PREDICTION 1:</label>
-        <p id="emotion1" class="emotion"></p>
+        <p id="hand_sign1" class="hand_sign"></p>
         <p id="emoji1" class="emoji"></p>
         <br>
         <br>
         <label>PREDICTION 2:</label>
-        <p id="emotion2" class="emotion"></p>
+        <p id="hand_sign2" class="hand_sign"></p>
         <p id="emoji2" class="emoji"></p>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 shadowed">
         <label>Snapshot - </label>
         <div id="result"></div>
         <br><br>
-        <button class="btn btn-success">PREDICT EMOJI</button>
+        <button class="btn btn-success" onclick="check()">PREDICT EMOJI</button>
       </div>
 
     </center>
